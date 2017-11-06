@@ -9,12 +9,15 @@ header{
 }
 
 article{
-	max-width: 960px;
 	margin: 40px auto;
 }
 
 footer{
+	position: relative;
 	width: 100%;
+	background: #fff;
+	height: 300px;
+	border-top: 1px solid #000;
 }
 
 h3{
@@ -51,10 +54,16 @@ h3{
 	float: left;
 }
 
+.inner{
+	width: 960px;
+	margin: 0 auto;
+}
+
 .articleBox{
 	border: 1px solid #333333;
 	padding: 30px 20px;
 	background: #fff;
+	margin-bottom: 40px;
 }
 
 .articleTitle{
@@ -79,12 +88,28 @@ h3{
 }
 
 .articleTxt{
-	margin-top: 20px;
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+.readMore{
+	border: 1px solid #333;
+	text-decoration: none;
+	color: #000;
+	display: inline-block;
+	float: right;
+	padding: 10px;
+	background: #FFF;
+}
+
+.readMore:hover{
+	background: #DDD;
 }
 
 #sideMenu{
 	float: right;
 	width: 30%;
+	min-height: 800px;
 	height: 100%;
 	background: #fff;
 	border: 1px solid #333333;
@@ -95,12 +120,22 @@ h3{
 	margin-left: 20px;
 }
 
-.clearFix{
-	clear: both;
+.teamName{
+	margin-top: 30px;
+	font-size: 26px;
 }
 
-.clearFix:after{
-	content: "";
+.aboutTeam{
+	margin-top: 15px;
+}
+
+.copyWrite{
 	display: block;
-	clear: both;
+	position: absolute;
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+	bottom: 30px;
+	left: 0;
+	right: 0;
 }
